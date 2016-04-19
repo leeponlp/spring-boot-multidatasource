@@ -1,84 +1,80 @@
 package com.qy.po;
 
-
 /**
- * 对应stats_db库里的t_china_city表
- * @author leepon
- * 日期：2014/11/13
+ * @author leepon1990
  */
 public class TChinaCity {
-	
-    private Integer iautoid;
 
-    //城市名
-    private String sname;
-    
-   //上级城市id
-    private Integer iparentid;
+	private Integer iautoid;
 
-    private Integer isort;
+	// 城市名
+	private String sname;
 
-    private Boolean istatus;
+	// 上级城市id
+	private Integer iparentid;
 
-    private Integer icreatetime;
+	private Integer isort;
 
-    private Integer iupdatetime;
-    
-    
-   //getter and setter
-    public Integer getIautoid() {
-        return iautoid;
-    }
+	private Boolean istatus;
 
-    public void setIautoid(Integer iautoid) {
-        this.iautoid = iautoid;
-    }
+	private Integer icreatetime;
 
-    public String getSname() {
-        return sname;
-    }
+	private Integer iupdatetime;
 
-    public void setSname(String sname) {
-        this.sname = sname == null ? null : sname.trim();
-    }
+	// getter and setter
+	public Integer getIautoid() {
+		return iautoid;
+	}
 
-    public Integer getIparentid() {
-        return iparentid;
-    }
+	public void setIautoid(Integer iautoid) {
+		this.iautoid = iautoid;
+	}
 
-    public void setIparentid(Integer iparentid) {
-        this.iparentid = iparentid;
-    }
+	public String getSname() {
+		return sname;
+	}
 
-    public Integer getIsort() {
-        return isort;
-    }
+	public void setSname(String sname) {
+		this.sname = sname == null ? null : sname.trim();
+	}
 
-    public void setIsort(Integer isort) {
-        this.isort = isort;
-    }
+	public Integer getIparentid() {
+		return iparentid;
+	}
 
-    public Boolean getIstatus() {
-        return istatus;
-    }
+	public void setIparentid(Integer iparentid) {
+		this.iparentid = iparentid;
+	}
 
-    public void setIstatus(Boolean istatus) {
-        this.istatus = istatus;
-    }
+	public Integer getIsort() {
+		return isort;
+	}
 
-    public Integer getIcreatetime() {
-        return icreatetime;
-    }
+	public void setIsort(Integer isort) {
+		this.isort = isort;
+	}
 
-    public void setIcreatetime(Integer icreatetime) {
-        this.icreatetime = icreatetime;
-    }
+	public Boolean getIstatus() {
+		return istatus;
+	}
 
-    public Integer getIupdatetime() {
-        return iupdatetime;
-    }
+	public void setIstatus(Boolean istatus) {
+		this.istatus = istatus;
+	}
 
-    public void setIupdatetime(Integer iupdatetime) {
-        this.iupdatetime = iupdatetime;
-    }
+	public Integer getIcreatetime() {
+		return icreatetime;
+	}
+
+	public void setIcreatetime(Integer icreatetime) {
+		this.icreatetime = icreatetime;
+	}
+
+	public Integer getIupdatetime() {
+		return iupdatetime;
+	}
+
+	public void setIupdatetime(Integer iupdatetime) {
+		this.iupdatetime = iupdatetime;
+	}
 }

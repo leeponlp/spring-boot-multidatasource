@@ -1,10 +1,4 @@
 package com.qy.datasource;
-/**   
- * This class is used for ...   
- * @author leepon1990  
- * @version   
- *       1.0, 2016年4月18日 下午3:38:40   
- */
 import java.util.HashMap;
 import java.util.Map;
 
