@@ -1,0 +1,32 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!-- <property name="APP_NAME" value="insurance"/>
+    <property name="LOG_PATH" value="/data/log/qy/insurance"/>
+    <contextName>${APP_NAME}</contextName>
+ -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+  <!--   <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}-%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+ -->
+    <logger name="com.qy" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+      <!--   <appender-ref ref="FILE"/>
+ -->    </logger>
+    <root level="DEBUG">
+        <appender-ref ref="STDOUT"/>
+        <!-- <appender-ref ref="FILE"/> -->
+    </root>
+</configuration>
