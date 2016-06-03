@@ -15,7 +15,7 @@ public class TChinaCity {
 
 	private Integer isort;
 
-	private Boolean istatus;
+	private Byte istatus;
 
 	private Integer icreatetime;
 
@@ -54,11 +54,11 @@ public class TChinaCity {
 		this.isort = isort;
 	}
 
-	public Boolean getIstatus() {
+	public Byte getIstatus() {
 		return istatus;
 	}
 
-	public void setIstatus(Boolean istatus) {
+	public void setIstatus(Byte istatus) {
 		this.istatus = istatus;
 	}
 
